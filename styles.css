@@ -10,6 +10,7 @@
   --color-white:rgba(255,255,255,1);
   --color-navy-blue: rgba(24,35,112,1);
   --color-blue:rgba(40,77,248,1);
+  --color-blue-or-not-blue:rgba(96,112,187,1);
   --color-light-blue:rgba(179,218,249,1);
   --color-dark-blue:rgba(29,128,221,1);
   --color-light-green:rgba(193,226,195,1);
@@ -71,6 +72,7 @@
 
 .banner__description{
   margin: 20px 0;
+  color: var(--color-blue-or-not-blue);
 }
 
 .banner__btn{
