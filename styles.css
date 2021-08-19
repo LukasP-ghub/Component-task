@@ -1,0 +1,28 @@
+*,*::after,*::before{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --gradient-white-purple: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(232,234,246,1) 100%);
+}
+
+.banner{
+  position: absolute;
+  top:50%;
+  left:50%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  width: 100vw;
+  max-width: 1300px;
+  height: 50vw;
+  max-height: 600px;
+  padding: 5%;
+
+  background: var(--gradient-white-purple);
+  transform: translate(-50%,-50%);
+}
