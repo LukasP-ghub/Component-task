@@ -6,26 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banner Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="./styles.css" rel="stylesheet">
   </head>
 
   <body>
 
     <div class="banner">
-      <section class="banner__section">
+      <section class="banner__section banner__section--padding-right">
         <p class="banner__title-short">Lorem ipsum</p>
-        <h2 class="banner__title">Lorem ipsum dolor sit amet consectetur.</h2>
-        <p class="banner__description">Quasi amet sunt sequi! Doloribus vitae similique dolorum
+        <h2 class="banner__title-main"><span class="banner--text-color-blue">Lorem ipsum</span> dolor sit amet
+          consectetur.</h2>
+        <p class="banner__description banner__description--line-height">Quasi amet sunt sequi! Doloribus vitae similique
+          dolorum
           est nobis voluptate voluptatem neque temporibus ducimus iure, eos enim accusantium blanditiis libero mollitia.
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus et in nemo autem. Enim amet maxime
-          perferendis</p>
+        </p>
         <button class="banner__btn">Action</button>
       </section>
 
-      <section class="banner__section">
+      <section class="banner__section banner__section--flex-row">
         <div class="banner__feature">
           <div class="banner__icon">
-            <svg id="Capa_1" enable-background="new 0 0 512 512" height="32" viewBox="0 0 512 512" width="32"
+            <svg id="Capa_1" enable-background="new 0 0 512 512" height="25" viewBox="0 0 512 512" width="25"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m101.618 512h105.506v-67.729h97.753v67.729h105.506v-512h-308.765zm239.13-474.247h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm-67.753-406.518h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm-67.753-338.765h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm-67.753-338.765h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763z" />
+              <path d="m237.124 474.271h37.753v37.729h-37.753z" />
+            </svg>
+          </div>
+          <h3 class="banner__title"> Eos nemo est omnis dolor adipisci vel dolores.</h3>
+          <p class="banner__description">Enim ipsa quasi, neque saepe voluptatibus
+            temporibus dolorum
+            nesciunt totam provident qui dolore soluta non voluptatem eveniet amet unde, tempore tempora modi?</p>
+        </div>
+
+        <div class="banner__feature">
+          <div class="banner__icon">
+            <svg id="Capa_1" enable-background="new 0 0 512 512" height="25" viewBox="0 0 512 512" width="25"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="m101.618 512h105.506v-67.729h97.753v67.729h105.506v-512h-308.765zm239.13-474.247h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm-67.753-406.518h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm-67.753-338.765h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm-67.753-338.765h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763z" />
@@ -39,7 +58,7 @@
 
         <div class="banner__feature">
           <div class="banner__icon">
-            <svg id="Capa_1" enable-background="new 0 0 512 512" height="32" viewBox="0 0 512 512" width="32"
+            <svg id="Capa_1" enable-background="new 0 0 512 512" height="25" viewBox="0 0 512 512" width="25"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="m101.618 512h105.506v-67.729h97.753v67.729h105.506v-512h-308.765zm239.13-474.247h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm-67.753-406.518h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm-67.753-338.765h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm-67.753-338.765h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763z" />
@@ -52,21 +71,7 @@
         </div>
 
         <div class="banner__feature">
-          <div class="banner__icon">
-            <svg id="Capa_1" enable-background="new 0 0 512 512" height="32" viewBox="0 0 512 512" width="32"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="m101.618 512h105.506v-67.729h97.753v67.729h105.506v-512h-308.765zm239.13-474.247h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm-67.753-406.518h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm-67.753-338.765h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm-67.753-338.765h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763z" />
-              <path d="m237.124 474.271h37.753v37.729h-37.753z" />
-            </svg>
-          </div>
-          <h3 class="banner__title"> Eos nemo est omnis dolor adipisci vel dolores.</h3>
-          <p class="banner__description">Enim ipsa quasi, neque saepe voluptatibus temporibus dolorum
-            nesciunt totam provident qui dolore soluta non voluptatem eveniet amet unde, tempore tempora modi?</p>
-        </div>
-
-        <div class="banner__feature">
-          <svg id="Capa_1" enable-background="new 0 0 512 512" height="32" viewBox="0 0 512 512" width="32"
+          <svg id="Capa_1" enable-background="new 0 0 512 512" height="25" viewBox="0 0 512 512" width="25"
             xmlns="http://www.w3.org/2000/svg">
             <path
               d="m101.618 512h105.506v-67.729h97.753v67.729h105.506v-512h-308.765zm239.13-474.247h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm-67.753-406.518h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm-67.753-338.765h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm-67.753-338.765h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763zm0 67.753h33.763v30h-33.763z" />
