@@ -6,6 +6,7 @@
 
 :root{
   --gradient-white-purple: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(232,234,246,1) 100%);
+  --gradient-white-purple2: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(232,234,246,1) 75%);
   --color-orange: rgba(254,159,39,1);
   --color-white:rgba(255,255,255,1);
   --color-navy-blue: rgba(24,35,112,1);
@@ -20,6 +21,7 @@
   --color-light-purple:rgba(220, 183, 226, 1);
   --color-dark-purple:rgba(129,39,157,1);
   --color-light-gray:rgba(220,219,220,1);
+  --color-purple:rgba(232,234,246,1);
 }
 
 .banner{
@@ -40,6 +42,7 @@
   font-family: 'Roboto', sans-serif;
   color:var(--color-navy-blue);
   background: var(--gradient-white-purple);
+  overflow: hidden;
   transform: translate(-50%,-50%);
 }
 
@@ -53,6 +56,19 @@
 
   width: 100%;
   height: 100%;
+  z-index: 2;
+}
+
+.banner__visual-element-big{
+  position: absolute;
+  top:33%;
+  left:-2%;
+  height: 70%;
+  width: 70%;
+  max-width: 500px;
+  border-top-left-radius: 100%;
+  background:var(--gradient-white-purple2);
+  z-index: 0;
 }
 
 .banner__title-short{
