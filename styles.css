@@ -7,6 +7,7 @@
 :root{
   --gradient-white-purple: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(232,234,246,1) 100%);
   --gradient-white-purple2: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(232,234,246,1) 75%);
+  --gradient-white-purple3: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(232,234,246,1) 55%);
   --color-orange: rgba(254,159,39,1);
   --color-white:rgba(255,255,255,1);
   --color-navy-blue: rgba(24,35,112,1);
@@ -47,6 +48,7 @@
 }
 
 .banner__section{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,6 +71,17 @@
   border-top-left-radius: 100%;
   background:var(--gradient-white-purple2);
   z-index: 0;
+}
+
+.banner__visual-element-small{
+  position: absolute;
+  top:33%;
+  left:40%;
+  height: 25%;
+  width: 40%;
+  max-width: 500px;
+  border-bottom-left-radius: 100%;
+  background:var(--gradient-white-purple3);
 }
 
 .banner__title-short{
@@ -112,6 +125,7 @@
   border: 1px solid var(--color-light-gray);
   border-radius: 5px;
   background-color: var(--color-white);
+  z-index: 3;
 }
 
 .banner__feature .banner__description{
