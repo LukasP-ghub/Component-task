@@ -66,7 +66,7 @@
   top:33%;
   left:-2%;
   height: 70%;
-  width: 70%;
+  width: 40%;
   max-width: 500px;
   border-top-left-radius: 100%;
   background:var(--gradient-white-purple2);
@@ -131,7 +131,11 @@
 .banner__feature .banner__description{
   margin-top: 8px;
   margin-bottom: 0;
-  font-size: 0.9rem;
+  font-size: 0.9em;
+}
+
+.Capa_1{
+  height: 70%;
 }
 
 .banner__feature:nth-of-type(odd){
@@ -167,8 +171,10 @@
 .banner__icon{
   display: grid;
   place-items: center;
-  width: 38px;
-  height: 38px;
+  height: 3vw;
+  width: 3vw;
+  max-width: 38px;
+  max-height: 38px;
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -189,25 +195,83 @@
   line-height: 1.7em;
 }
 
-@media (max-width:1000px){
-
+@media(max-width:1200px){
   .banner{
-    top:0;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    height:-moz-fit-content;
-    height: fit-content;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-    transform: translate(-50%,0);
+    grid-template-columns: 40% 60%;
+    font-size: 14px;
   }
 
-  .banner__section:nth-of-type(2){
-     padding-top:30px;
+  .banner__title{
+    line-height: 1.5em;
   }
 
   .banner__section--padding-right{
-    padding-right: 0;
+    padding-right: 6%;
   }
+}
+
+@media(max-width:1000px){
+  .banner{
+    font-size: 13px;
+  }
+
+  .banner__feature{
+    padding: 3%;
+  }
+
+  .banner__section{
+    column-gap: 10px;
+  }
+
+  .banner__title{
+    line-height: 1.3em;
+  }
+
+  .banner__title-main{
+    font-size: 2.5em;
+  }
+
+  .banner__feature{
+    margin-bottom: 10px;
+  }
+
+  .banner__section--padding-right{
+    padding-right: 3%;
+  }
+}
+
+@media(max-width:805px){
+  .banner{
+    font-size: 12px;
+  }
+
+  .banner__feature {
+    margin-bottom: 4px;
+  }
+
+  .banner__icon{
+    margin-bottom: 4px;
+  }
+  
+  .banner__feature .banner__description {
+    margin-top: 4px;
+  }
+  
+  .banner__title {
+    line-height: 1.2em;
+    font-size: 1.05em;
+  }
+  
+  .banner__title-main {
+    font-size: 2.2em;
+  }
+  
+  .banner__description {
+    margin: 10px 0;
+  }
+  
+  .banner__description--line-height {
+    line-height: 1.4em;
+  }
+  
 }
