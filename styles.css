@@ -23,6 +23,7 @@
   --color-dark-purple:rgba(129,39,157,1);
   --color-light-gray:rgba(220,219,220,1);
   --color-purple:rgba(232,234,246,1);
+  --color-purple2:rgba(230, 231, 245, 1);
 }
 
 .banner{
@@ -82,6 +83,19 @@
   max-width: 500px;
   border-bottom-left-radius: 100%;
   background:var(--gradient-white-purple3);
+}
+
+.banner__visual-element-shadowed{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 250px solid var(--color-purple2);
+  border-top: 100px solid var(--color-purple2);
+  box-shadow: 50px 0 30px 20px var(--color-purple2);
+  z-index: 0;
 }
 
 .banner__title-short{
