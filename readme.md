@@ -5,7 +5,7 @@ Small visual component.
 - CSS, BEM
 
 ## Live
-https://lukasxxz.github.io/Component-task/
+https://lukasp-ghub.github.io/Component-task/
 
 
 *Icons made by https://www.freepik.com from https://www.flaticon.com/*
